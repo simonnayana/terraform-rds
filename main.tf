@@ -72,7 +72,6 @@ resource "aws_rds_cluster" "default" {
 
   lifecycle {
     ignore_changes = [
-      cluster_identifier,
       engine_version,
       master_username,
       master_password,
